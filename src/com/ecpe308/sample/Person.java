@@ -1,18 +1,19 @@
 package com.ecpe308.sample;
 
 public class Person {
-    private String lastName, firstName, address;
+    private String lastName, firstName, address, birthdate;
     private int age;
 
     public Person() {
 
     };
 
-    public Person(String lastName, String firstName, String address, int age) {
+    public Person(String lastName, String firstName, String address, int age, String birthdate) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.address = address;
         this.age = age;
+        this.birthdate = birthdate;
     }
 
     public String getLastName() {
@@ -45,5 +46,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getBirthdate() {
+        return birthdate;
+    }
+
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 }
